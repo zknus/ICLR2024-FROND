@@ -26,6 +26,11 @@ python run_GNN_frac_all.py
 --alpha_ode  between (0,1] the value of beta in the paper
 --time     integration time
 --step_size  
+
+FOR EXAMPLE:
+
+run_GNN_frac_all.py --dataset Cora --function laplacian --block att_frac --cuda 1 --method predictor --epoch 400 --seed 123 --runtime 10 --decay 0.01 --dropout 0.2 --hidden_dim 256 --input_dropout 0.6 --alpha_ode 0.85 --time 40 --step_size 1.0 --lr 0.01
+
 ```
 
 ## Reference 
